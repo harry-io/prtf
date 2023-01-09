@@ -1,16 +1,14 @@
 import Link from "next/link";
 import React from "react";
-import {
-  FaLink,
-  FaRegFolder,
-  FaStar,
-  FaStarAndCrescent,
-  FaStarOfDavid,
-} from "react-icons/fa";
+import { FaRegFolder, FaStar } from "react-icons/fa";
 
 const ProjectCard = ({ data }) => {
+  console.log(data.html_url);
+  const redirect = (url) => {
+    window.location.href = `${url}`;
+  };
   return (
-    <div className="project_card">
+    <div className="project_card" onClick={() => redirect(data.html_url)}>
       <div className="project_card_a">
         <div
           style={{
@@ -30,7 +28,7 @@ const ProjectCard = ({ data }) => {
             }}
           >
             {" "}
-            <FaRegFolder style={{ color: "white" }} /> {data.name}
+            <FaRegFolder style={{ color: "white" }} /> {data.full_name}
           </h2>
           <span
             style={{
@@ -55,7 +53,7 @@ const ProjectCard = ({ data }) => {
         >
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <div className="color"></div>
-            <p>{data.techStack}</p>
+            <p>{data.language}</p>
           </div>
           <div>
             <p>Updated 3 days ago</p>

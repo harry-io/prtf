@@ -11,6 +11,9 @@ const stacks = [
   { name: "GIT" },
 ];
 const Profile = () => {
+  const redirect = (url) => {
+    window.location.href = `${url}`;
+  };
   return (
     <div className="profile_user">
       {/*  */}
@@ -31,8 +34,18 @@ const Profile = () => {
           <p style={{ color: "grey" }}>@harry-io</p>
         </div>
         <div className="profile_div_button">
-          <button>Resume</button>
-          <button>Follow</button>
+          <button
+            onClick={() =>
+              redirect(
+                "https://drive.google.com/file/d/1X_gCg31PVf4WjuU3J3xmNjyCoUNDgfic/view?usp=share_link"
+              )
+            }
+          >
+            Resume
+          </button>
+          <button onClick={() => redirect("https://github.com/harry-io")}>
+            Follow
+          </button>
         </div>
       </div>
 
