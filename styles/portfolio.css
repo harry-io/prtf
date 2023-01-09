@@ -1,0 +1,145 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 20px 5px;
+  background-color: #171923;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+.navbar_i {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar_i > a {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.navbar_i > a:hover {
+  background-color: #21262d;
+}
+
+.pf_main_container {
+  width: 95%;
+  margin: auto;
+  background-color: #0d1117;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+.pf_main_container_div_a {
+  width: 99%;
+  margin: auto;
+  background-color: #161b22;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.profile_user {
+  width: 40%;
+  margin: auto;
+
+  text-align: center;
+}
+.profile_pic_div {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding-top: 10px;
+
+  margin: auto;
+}
+.profile_div_button {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.profile_div_button > button {
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  color: #c9d1d9;
+  background-color: #21262d;
+  border: 1px solid rgba(240, 246, 252, 0.03);
+
+  cursor: pointer;
+}
+.profile_div_button > button:hover {
+  border: 1px solid rgba(240, 246, 252, 0.1);
+}
+.profile_user_div_b {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+/* pf_main_container_div_b */
+.pf_main_container_div_b {
+  width: 100%;
+  margin: auto;
+
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.pf_main_container_div_b_a {
+  width: 20%;
+  margin: auto;
+}
+.pf_main_container_div_b_b {
+  width: 78%;
+  margin: auto;
+}
+.pfpicture {
+  border-radius: 50%;
+  width: 100%;
+}
+/*  */
+.projectsDiv {
+  width: 98%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+}
+/*  */
+.project_card {
+  display: flex;
+  justify-content: space-around;
+  background-color: #161b22;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.project_card_a {
+  width: 40%;
+  padding: 10px 0;
+}
+.color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+.project_card_b {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.project_card_b > a {
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
